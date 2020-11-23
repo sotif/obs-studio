@@ -415,7 +415,7 @@ SimpleOutput::SimpleOutput(OBSBasic *main_) : BasicOutputHandler(main_)
 		throw "Failed to create aac streaming encoder (simple output)";
 	if (!CreateAACEncoder(aacArchive, aacArchiveEncID, GetAudioBitrate(),
 			      "archive_aac", 1))
-		throw "Failed to create aac arhive encoder (simple output)";
+		throw "Failed to create aac archive encoder (simple output)";
 
 	LoadRecordingPreset();
 
